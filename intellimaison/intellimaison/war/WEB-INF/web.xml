@@ -8,6 +8,27 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Intellimaison</servlet-name>
 		<servlet-class>com.intelli.maison.IntellimaisonServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>GetTemperatures</servlet-name>
+		<servlet-class>com.intelli.reception.GetTemperatures</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>GenerateGraph</servlet-name>
+		<servlet-class>com.get.graph.GenerateGraph</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GenerateGraph</servlet-name>
+		<url-pattern>/graph</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>GetTemperatures</servlet-name>
+		<url-pattern>/temp</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>Intellimaison</servlet-name>
 		<url-pattern>/intellimaison</url-pattern>
